@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    background: linear-gradient(135deg, #a84fff, #ff4f8c); /* Giữ màu nền gradient tím-pink */
 }
 
 /* Hộp chứa form */
@@ -55,8 +55,8 @@ h2 {
     border-radius: 5px;
 }
 
-/* Nút đăng nhập */
-button {
+/* Nút đăng nhập chính */
+button[type="submit"] {
     width: 100%;
     padding: 10px;
     background: #4facfe;
@@ -68,8 +68,53 @@ button {
     transition: background 0.3s ease;
 }
 
-button:hover {
+button[type="submit"]:hover {
     background: #3a8bf5;
+}
+
+/* Nút đăng nhập xã hội */
+.social-btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 25px; /* Nút tròn hơn, giống hình ảnh */
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Khoảng cách giữa icon và văn bản */
+    transition: opacity 0.3s ease;
+    font-weight: bold; /* Văn bản đậm hơn, giống hình ảnh */
+}
+
+.social-btn:hover {
+    opacity: 0.9;
+}
+
+/* Nút Facebook */
+.facebook-btn {
+    background: #3b5998; /* Màu xanh dương của Facebook */
+    color: white;
+}
+
+.facebook-btn::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffffff"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM15 8h-2v1h2v1h-2v2h-1v-2H9V9h3V8h1v1h1V8z"/></svg>');
+    width: 16px; /* Giảm kích thước icon để phù hợp */
+    height: 16px; /* Giảm kích thước icon để phù hợp */
+}
+
+/* Nút Google (Gmail) */
+.google-btn {
+    background: #dd4b39; /* Màu đỏ của Google */
+    color: white;
+}
+
+.google-btn::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="%23ffffff"><path d="M24 9.5c3.54 0 6.71 1.34 9.05 3.52l6.65-6.65C35.28 3.12 29.81 1.5 24 1.5 14.56 1.5 6.65 8.49 4.3 17.5l7.55 5.84c1.45-4.31 5.11-7.84 9.15-9.68zM1.5 24c0-2.48.51-4.84 1.43-7.04l-7.43-5.74C-.91 14.22-.5 17.36-.5 20.5s-.41 6.28 1.43 9.24l7.43-5.74c-.92-2.2-1.43-4.56-1.43-7.04zM24 38.5c-5.75 0-10.4-3.96-11.85-9.34l-7.55 5.84c2.35 9.01 10.26 16 19.4 16 5.82 0 11.28-1.56 15.69-4.45l-6.64-6.64c-2.41 2.2-5.55 3.54-9.05 3.54zM46.5 24c0-2.14-.41-4.19-1.15-6.09l-7.43 5.74c.92 2.2 1.43 4.56 1.43 7.04 0 1.86-.31 3.64-.89 5.31l7.43 5.74c1.85-2.96 2.96-6.48 2.96-10.24z"/></svg>');
+    width: 16px; /* Giảm kích thước icon để phù hợp */
+    height: 16px; /* Giảm kích thước icon để phù hợp */
 }
 
 /* Liên kết đăng ký */
