@@ -36,7 +36,13 @@ h2 {
     text-align: left;
 }
 
+.checkbox-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
 .input-group label {
+    color: #00459f;
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
