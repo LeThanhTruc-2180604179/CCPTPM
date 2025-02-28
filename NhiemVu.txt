@@ -1,0 +1,4 @@
+Trúc: Thêm nút đăng nhập Google, Facebook. Chỉnh lại màu nền( tùy ý).
+Dương: Thêm vào form đăng nhập nút xác nhận lưu tài khoản (checkbox). Chỉnh lại màu chữ trong form đăng ký.
+Tiên: Thêm form đăng ký vào file index.html tương tự như form đăng nhập.
+Jason: Thêm, chỉnh lại màu form và màu chữ. Thêm vào form đăng ký nút xác nhận đồng ý điều khoản (checkbox).
